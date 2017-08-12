@@ -1,0 +1,58 @@
+<!--Homework question:-->
+<!--当我往content-container加东西时， content-container的div的height不会随内容增加而增加-->
+<!--现实现象：往content-container加多若干个boxes， content-container底部会出现溢出， 导致部分的box覆盖掉copy right的div（把以下的code uncommented 就能显现出问题）-->
+
+<!--期待现象： 往content-container加boxes时， content-container的height会随着里面的内容增加而增加。最终会看到copy right的div不会被添加的boxes所覆盖-->
+
+
+
+<html>
+<head>
+    <title>index</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<img src="img/bg-img.png" class="login-background">
+
+<nav>
+    <h1>I'M HUNGRY</h1>
+    <ul>
+        <li><a href="">下载</a></li>
+        <li><a href="index.html">关于我们</a></li>
+        <li><a href="">登陆</a></li>
+        <li><a href="login.html"><button class="login-btn">注册账号</button></a></li>
+    </ul>
+</nav>
+
+<div class="container center">
+    <h1>餐厅列表</h1>
+    <div id="content-container"></div>
+    <div class="row copy-right-container">
+        <footer>
+            <div class="left">
+                <p>Privacy Policy</p>
+                <p>Term Service</p>
+                <p>2017 c IMHUNGRY, Inc.</p>
+            </div>
+
+            <div class="right">
+                <img src="img/instagram.png" alt="">
+                <img src="img/linkedin.png" alt="">
+                <img src="img/twitter.png" alt="">
+                <img src="img/facebook.png" alt="">
+            </div>
+        </footer>
+    </div>
+
+</div>
+<script
+        src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/magic.min.css" />
+<link rel="stylesheet" href="css/style.css">
+
+</body>
+</html>

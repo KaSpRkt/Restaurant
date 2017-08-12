@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url(../fonts/Nexa_Book-webfont.woff2);
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'Nexa';
+    src: url(../fonts/Nexa_Heavy-webfont.woff2);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(../fonts/Brandon_reg.otf);
+    font-weight: 900;
+}
+
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(../fonts/Brandon_med.otf);
+    font-weight: 800;
+}
+
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(../fonts/Brandon_thin.otf);
+    font-weight: 200;
+}
+
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: #EE6363;}
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #F5F5F5;
+}
+
+body{
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+}
+
+.login-background{
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+nav{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav h1:hover{
+    font-size: 1.6em;
+
+}
+
+nav h1{
+    font-weight: 800;
+    color: #EE6363;
+    display: inline-block;
+    vertical-align: middle;
+    transition: font-size .5s linear;
+}
+
+
+nav ul{
+    display: inline-block;
+    margin-right: 10px;
+    width:80%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav a{
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.16rem;
+    color: black;
+}
+
+nav a:hover{
+    color: #EE6363;
+    transition: background-color .5s linear;
+}
+
+nav button:hover{
+    background-color: #E8FAFF;
+    color: #EE6363;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    transition: background-color .5s linear ,color .5s linear, text-shadow 1s, width 0.5s;
+    cursor: pointer;
+    width: 23rem
+}
+
+nav button{
+    background-color: Transparent;
+    color:black;
+    font-size: 1.16rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 900;
+    padding: 7px;
+    width: 15rem;
+    height: 3rem;
+    text-shadow: none;
+    transition: background-color .5s linear ,color .5s linear, text-shadow 1s, width 0.5s;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    float: left;
+    margin-left:23.5rem;
+}
+
+.right{
+    float:right;
+    margin-right: 23.5rem;
+}
+
+
+.container{
+    /*margin-top: -5rem;*/
+    position: relative;
+}
+
+.container h1{
+    color: rgb(110, 110, 110);
+    font-family: Arial;
+}
+
+#content-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 0 0 1%;
+
+}
+
+#content-container .food-img{
+    width: 30%;
+    height:12rem;
+    float: left;
+    margin: 1% 2% 2% 1%;
+    position: relative;
+    text-align: center;
+}
+
+#content-container .food-img iframe{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+}
+
+#content-container .shell{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+#content-container .food-img:hover{
+    cursor: pointer;
+}
+
+#content-container img{
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(3px);
+    filter: blur(1.5px);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#content-container h1, #content-container h3, #content-container p{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+}
+
+#content-container h1{
+    top: -4%;
+}
+
+#content-container h3{
+    top: 35%;
+}
+
+#content-container p{
+    top:60%;
+    font-family: Brandon;
+    font-weight:200;
+}
+
+#content-container h3{
+    font-family: Brandon;
+    font-weight: 900;
+}
+
+#content-container:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.content-bg{
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    position: absolute;
+}
+
+.row{
+    margin-left: 0;
+    margin-right:0;
+    margin-top: 11rem;
+    background-color: white;
+    width:100%;
+    height: 13rem;
+}
+
+.row p{
+    color:#EEEEEE;
+}
+
+
+.copy-right-container{
+    background: none;
+    height:13rem;
+    position: absolute;
+    top:150%;
+    /*bottom: 0;*/
+    z-index: 300;
+    margin-top:0;
+
+}
+
+footer{
+    background-color: #2C3133;
+    opacity: 0.99;
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer p{
+    font-family: Brandon;
+    font-weight:200;
+}
+
+footer img{
+    width: 2rem;
+    height:2rem;
+    margin-left: 1rem;
+
+}
+
+footer .right{
+
+    margin-top:5rem;
+    margin-right: 17rem;
+}
+
+footer .left{
+    margin-top:2.7rem;
+    margin-left: 17rem;
+}
+
